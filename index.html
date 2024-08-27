@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="body">
+    <header>
+        <div class="header">
+            <img class="header__alura__logo" src="./images/Logo.png" alt="Logo de alura">
+        </div>
+    </header>
+    <main class="presentacion">
+        <div class="main">
+            <section class="presentacion__contenido">
+                <div class="zona__izquierda">
+                    <textarea id="presentacion__contenido__texto" class="presentacion__contenido__texto" placeholder="Ingrese el texto aqui"></textarea>
+                    
+                    <div class="zona__izquierda__footer">
+                        <img class="signo__advertencia" src="./images/bi_exclamation-circle-fill.png" alt="signo advertencia">
+                        <span class="frase__advertencia">Solo letras minusculas y sin acentos</span>
+
+                        <div class="botones__izquierda">
+                            <button id="boton__encriptar" class="boton__encriptar">Encriptar</button>
+                            <button id="boton__desencriptar" class="boton__desencriptar">Desencriptar</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="area__encriptado">
+                <div id="zona__derecha" class="zona__derecha ajustar">
+                    <img id="muñeco_texto_encriptado" class="muñeco_texto_encriptado" src="./images/Muñeco.png" alt="muñeco texto encriptado">
+                     <textarea id="mensaje__encriptado" class="mensaje__encriptado ajustar" placeholder="Ningun mensaje fue encontrado"></textarea>
+                    <p id="ingresar_texto" class="ingresar__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <button id="boton__copiar__mensaje" class="boton__copiar__mensaje boton__oculto">Copiar</button>
+                </div>
+
+                
+            </section>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
